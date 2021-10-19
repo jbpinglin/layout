@@ -6,19 +6,21 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="@drawable/bg_espace"
+    android:gravity="center"
     >
-    <RelativeLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        >
+
 
         <LinearLayout
-            android:layout_width="340dp"
-            android:layout_height="550dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingVertical="50dp"
+            android:paddingHorizontal="12dp"
+            >
 
-            android:orientation="vertical">
+
 
             <TextView
                 android:layout_width="wrap_content"
@@ -28,7 +30,8 @@
                 android:text="Postly !"
                 android:textColor="@color/white"
                 android:textSize="50dp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -37,14 +40,22 @@
                 android:layout_marginBottom="50dp"
                 android:text="Seamless Social Sharing, it's that easy !"
                 android:textColor="@color/white"
-                android:textSize="17dp" />
+                android:textSize="17dp"
+                />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="17dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_mail"
+                    />
 
                 <EditText
                     android:layout_width="fill_parent"
@@ -52,7 +63,6 @@
                     android:hint="you@yours.com"
                     android:inputType="text"
                     android:textColorHint="@color/white"
-
                     />
 
             </LinearLayout>
@@ -64,12 +74,20 @@
                 android:layout_marginBottom="30dp"
                 android:orientation="horizontal">
 
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_lock_open"
+                    />
+
                 <EditText
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:hint="Password"
                     android:inputType="text"
-                    android:textColorHint="@color/white" />
+                    android:textColorHint="@color/white"
+                    />
             </LinearLayout>
 
             <Button
@@ -79,14 +97,16 @@
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
                 android:padding="15dp"
-                android:text="Login" />
+                android:text="Login"
+                />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginBottom="20dp"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                >
 
 
                 <TextView
@@ -96,7 +116,8 @@
                     android:layout_weight="1"
                     android:text="or you can"
                     android:textAlignment="center"
-                    android:textColor="@color/white" />
+                    android:textColor="@color/white"
+                    />
 
 
             </LinearLayout>
@@ -107,10 +128,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:padding="15dp"
-                android:text="Create an account" />
+                android:text="Create an account"
+                />
 
         </LinearLayout>
-    </RelativeLayout>
+
 
 
 </LinearLayout>
